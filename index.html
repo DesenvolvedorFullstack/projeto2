@@ -1,0 +1,21 @@
+<!--HTML-->
+<html ng-app="heranca">
+    <head>
+        <title>Título da sua página</title>
+    </head>
+    <body>
+      <div class="familia" ng-app="heranca">
+        <div ng-controller="PaiController">
+          <p> {{turno}}, {{nome}}!</p>
+          <div ng-controller="FilhoController">
+            <p> {{turno}}, {{nome}}!</p>
+            <div ng-controller="NetoController">
+              <p> {{turno}}, {{nome}}!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <script src="lib/angular.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
